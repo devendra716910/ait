@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgres://username:password@host:port/dbname
+    koyeb:
+      instance_type: small
+      region: us-west-1

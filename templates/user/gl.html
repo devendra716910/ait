@@ -1,0 +1,14 @@
+{% extends 'user/layout.html' %} {% block content %}
+<div class="container">
+  <h1>Google Meet Links for {{ class_type.upper() }}</h1>
+  <ol class="list-group">
+    {% for link in meet_links %}
+    <li class="list-group-item">
+      <a href="{{ link.link }}" target="_blank">{{ link.link }}</a>
+    </li>
+    {% else %}
+    <li class="list-group-item">No links available</li>
+    {% endfor %}
+  </ol>
+</div>
+{% endblock content %}

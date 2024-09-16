@@ -1,0 +1,46 @@
+<!-- templates/message.html file -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/theme.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=latin,latin-ext"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.travel.sygic.com/travel.sygic.com_lp/css/404.css?bb888f167df57fda98af7c103aa4f69c539887a7"
+    />
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+    <div class="stars"></div>
+
+    <div class="sun-moon">
+      <div class="sun"></div>
+      <div class="moon"></div>
+    </div>
+
+    <div id="js-hills" class="background hills"></div>
+    <div id="js-country" class="background country"></div>
+    <div id="js-foreground" class="background foreground"></div>
+    <div class="">
+      <h2>{{ title }}</h2>
+      <h4>{{ message }}</h4>
+      <a href="/">Click here</a> to go to Home page
+    </div>
+    <div class="code" s>
+      <span>E</span>
+      <span>R</span>
+      <span>R</span>
+      <span>O</span>
+      <span>R</span>
+    </div>
+  </body>
+</html>
